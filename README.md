@@ -1,2 +1,3 @@
 # Site-NewHera
-Site Fictício autoral feito a base de HTML CSS e JavaScript
+Site autoral fictício totalmente responsívo utilizando tecnólogia HTML, CSS e JavaScript.
+Contém apenas a página inicial do site.
