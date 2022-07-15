@@ -1,0 +1,352 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body h1, h2, p {
+	font-family: 'Raleway', sans-serif;
+}
+
+header a{
+	font-family: 'Girassol', cursive;
+	color: white;
+	margin-top: auto;
+	margin-bottom: auto;
+	transition: .6s;
+}
+header a:hover{
+	text-shadow: white 0em 0em .4em;
+}
+
+#topo-nav {
+	display: flex;
+	width: 100%;
+	background: #111111;
+	padding-top: 1.25rem;
+	padding-bottom: 1.25rem;
+}
+
+
+
+/* Botão Mobile */
+#btn-mobile {
+	display: none;
+	margin-left: 1.875rem;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+/* Botão Mobile */
+
+/* Botão Mobile */
+#sair {
+	display: none;
+}
+/* Botão Mobile */
+
+
+/* ----------------------Css das 3 divs do #topo-nav-------------------------------- */
+
+
+/* --------------Primeira Div---------------- */
+.left-itens {
+	display: flex;
+	justify-content: flex-start;
+	width: 33.33%;
+}
+/* --------------Primeira Div----------------- */
+
+#links {
+	list-style: none;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+#links li{
+	display: inline-block;
+	margin-inline: .313rem;
+}
+
+
+.left-itens a {
+	text-decoration: none;
+	font-size: 1rem;
+	letter-spacing: .1rem;
+}
+
+
+
+
+/* --------------Segunda Div---------------- */
+.logo {
+	display: flex;
+	justify-content: center;
+	width: 33.33%;
+	font-size: 2.5rem;
+	letter-spacing: .5rem;
+	text-shadow: white 0em 0em .2em
+}
+/* --------------Segunda Div---------------- */
+
+.logo a {
+	text-decoration: none;
+}
+
+
+
+
+/* --------------Terceira Div---------------- */
+
+.right-itens{
+	display: flex;
+	justify-content: flex-end;
+	width: 33.33%;
+}
+/* --------------Terceira Div------------------ */
+
+
+.right-itens a {
+	margin-right: 1.5rem;
+}
+
+
+/*---------------------------------Section de apresentação----------------------------------*/
+
+#apresentacao-site {
+	display: flex;
+	justify-content: space-between;
+	width: 90%;
+	margin-inline: auto;
+	margin-top: 1.5rem;
+}
+
+.imagens-apresentacao {
+	width: 100%;
+	max-width: 550px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+.img-principal{
+	width: 100%;
+}
+
+.texto-apresentacao{
+	text-align: center;
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-inline: 1.5rem;
+	width: 100%;
+}
+
+.texto-apresentacao h1 {
+	display: inline-block;
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+.texto-apresentacao p {
+	padding-top: .5rem;
+	padding-bottom: 3rem;
+	font-weight: 400;
+	font-size: 1.5rem;
+}
+
+.btn-colecao {
+	font-family: 'Raleway', sans-serif;
+	text-decoration: none;
+	color: #111111;
+	font-size: 1.2rem;
+	font-weight: bold;
+	padding: 10px;
+	border: 1.5px solid #111111;
+	border-radius: 10px;
+	transition: .6s;
+}
+
+.btn-colecao:hover {
+	color: white;
+	background: #111111;
+	text-shadow: white 0em 0em .3em;
+}
+
+
+
+/*---------------------------------Section de Compra -----------------------------------*/
+
+.intro {
+	font-weight: bold;
+	text-align: center;
+	margin: 5rem 0rem 2rem 0rem;
+}
+
+.conteiner {
+	width: 90%;
+	margin-inline: auto;
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+
+.itens {
+	margin-top: 2rem;
+	margin-bottom: 8rem;
+	width: 225px;
+	height: 300px;
+}
+
+.itens img {
+	width: 100%;
+}
+
+.itens a {
+	color: black;
+	text-decoration: none;
+	margin-top: 1rem;
+	font-weight: bold;
+}
+
+/*-----------------------------Animação Section de Compra------------------------------*/
+
+[data-anime] {
+	opacity: 0;
+	transition: .3s;
+}
+
+[data-anime="bottom"] {
+	transform: translate3d(0px, 50px, 0px);
+}
+
+[data-anime].animate {
+	opacity: 1;
+	transform: translate3d(0px, 0px, 0px);
+}
+
+
+
+
+/*---------------------------------Media Queries --------------------------------------*/	
+@media (max-width: 768px) {
+
+/* Ajeitando proporções para MD */
+	#links {
+		display: none;
+	}
+
+	.first-link {
+		padding-left: none;
+	}
+
+	#btn-mobile {
+		display: block;
+	}
+
+	.left-itens {
+		width: 25%;
+	}
+
+	.logo {
+		width: 50%;
+		font-size: 2rem;
+	}
+
+	.right-itens {
+		width: 25%;
+	}
+
+	.right-itens a {
+		margin-right: 1rem;
+	}
+
+	/* SideBar */
+
+	#sair {
+		display: inline-block;
+	}
+
+	#links {
+		visibility: hidden;	
+		overflow-x: hidden;
+
+		display: block;
+
+		position: fixed;
+		top: 0px;
+		left: 0px;
+
+		height: 100%;
+		width: 0;
+		background: #111111;
+
+		z-index: 1000;
+
+		transition: .4s;
+	}
+
+	#links li{
+		display: block;
+		padding-top: 2.188rem;
+		padding-left: 1.875rem;
+
+	}
+
+	#topo-nav ul.active {
+		flex-direction: column;
+		visibility: visible;
+		width: 350px;
+	}
+
+	/* apresentacao */
+
+	#apresentacao-site {
+		flex-flow: row wrap;
+	}
+
+	.texto-apresentacao{
+		margin-top: 1rem;
+	}
+}
+
+@media (max-width: 576px) {
+
+/* Ajeitando proporções para SM */
+	#links li{
+		display: block;
+		padding-top: .813rem;
+		padding-left: .625rem;
+
+	}
+
+	#topo-nav{
+		padding-top: .5rem;
+		padding-bottom: .5rem;
+	}
+	#btn-mobile {
+		margin-left: .625rem;
+	}
+
+
+	.right-itens a {
+		padding-left: .5rem;
+	}	
+
+	.logo {
+		font-size: 1.5rem;
+	}
+
+	/* Apresentação */
+
+	.texto-apresentacao p {
+		font-size: 1rem;
+	}
+
+	.intro {
+		margin-top: 2rem;
+	}
+
+	.first-moda {
+		margin-top: 5rem;
+	}
+
+
+}
