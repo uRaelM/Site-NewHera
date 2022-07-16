@@ -28,6 +28,9 @@ SairSideBar.addEventListener('click', SideBar);
 
 
 
+
+
+
 /* Animação da parte de compras */
 
 /* debounce para diminuir a ocorrência de chama da função */
@@ -68,3 +71,4 @@ if(target.length) {
     animeScroll();
   }, 50));
 }
+/* Animação da parte de compras */
