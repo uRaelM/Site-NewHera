@@ -2,11 +2,15 @@
 document.getElementById("btn-mobile").addEventListener('click', function(event){
   event.preventDefault()
   document.querySelector('#side-bar').classList.add('active');
+  document.querySelector('#escurecer').classList.add('active');
+  document.querySelector('.img-principal').classList.add('active');
 });
 
 document.getElementById("sair").addEventListener("click", function(event){
   event.preventDefault()
   document.querySelector('#side-bar').classList.remove('active');
+  document.querySelector('#escurecer').classList.remove('active');
+  document.querySelector('.img-principal').classList.remove('active');
 });
 /* Fim Funções para a SideBar */
 
@@ -42,11 +46,15 @@ document.querySelector(".btn-sacola").addEventListener('click', function(event){
 document.querySelector('#btn-popup').addEventListener('click', function(event){
   event.preventDefault();
   document.querySelector('#popup-login-cadastro').classList.add('active');
+  document.querySelector('#escurecer').classList.add('active');
+  document.querySelector('.img-principal').classList.add('active');
 });
 
 document.querySelector('#btn-sair-popup').addEventListener('click', function(event){
   event.preventDefault();
   document.querySelector('#popup-login-cadastro').classList.remove('active');
+  document.querySelector('#escurecer').classList.remove('active');
+  document.querySelector('.img-principal').classList.remove('active');
 });
 /* Fim Funções para PopUp de Login/Cadastro */
 
