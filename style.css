@@ -51,6 +51,7 @@ header a:hover{
 	margin-top: auto;
 	margin-bottom: auto;
 }
+
 #sair {
 	display: none;
 }
@@ -101,27 +102,38 @@ header a:hover{
 }
 /* --------------Terceira Div------------------ */
 /* Relacionados a terceira div */
-#topo-nav .right-itens .btn-usuario {
+#area-usuario {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
 	height: 100%;
+	cursor: pointer;
+}
+
+#topo-nav a.btn-usuario{
 	padding-inline: 1rem;
 }
 
 #topo-nav .right-itens .btn-usuario:hover {
-	text-shadow: white 0em 0em 0em;
+	text-shadow: none;
 }
 
-#topo-nav .right-itens .btn-sacola {
-	height: 100%;
+#topo-nav .right-itens a.btn-sacola {
 	padding-inline: 1rem;
 }
 
-.btn-sacola:hover {
+#topo-nav .right-itens i.btn-sacola {
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+#topo-nav .right-itens .btn-sacola:hover {
 	text-shadow: white 0em 0em .2em;
 }
 
-#topo-nav .right-itens .btn-sacola i, 
-#topo-nav .right-itens .btn-usuario i{
-	margin-top: 1.7rem;
+#area-usuario .btn-usuario,
+#topo-nav .right-itens .btn-sacola{
+	display: inline;
 }
 
 
@@ -373,7 +385,7 @@ header a:hover{
 
 	#topo-nav .right-itens {
 		width: 25%;
-		margin-right: 1.5rem;
+		margin-right: 1.4rem;
 	}
 
 	#area-usuario {
@@ -381,7 +393,9 @@ header a:hover{
 	}
 
 	.right-itens .area-usuario-celular {
-		display: block;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
 	}
 
 	#topo-nav .right-itens .btn-sacola {
@@ -394,8 +408,7 @@ header a:hover{
 
 	#topo-nav .right-itens .btn-sacola i, 
 	#topo-nav .right-itens .btn-usuario i{
-		font-size: 1.3rem;
-		margin-top: 1.5rem;
+		font-size: 1.4rem;
 	}
 
 	/* SideBar */
@@ -481,7 +494,6 @@ header a:hover{
 	#topo-nav .right-itens .btn-sacola i, 
 	#topo-nav .right-itens .btn-usuario i{
 		font-size: 1rem;
-		margin-top: 1.2rem;
 	}
 
 	#topo-nav .logo {
