@@ -25,6 +25,19 @@ header a:hover{
 	padding-bottom: 1.25rem;
 }
 
+#escurecer {
+	transition: 0.2s;
+}
+
+#escurecer.active {
+	width: 100vw;
+	height: 100vh;
+	background: rgba(0, 0, 0, 0.6);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+}
 
 
 /* ----------------------Css das 3 divs do #topo-nav-------------------------------- */
@@ -183,8 +196,13 @@ header a:hover{
 }
 
 
-.img-principal{
+.img-principal {
+	transition: 0.2s;
 	width: 100%;
+}
+
+.img-principal.active {
+	filter: brightness(0.4);
 }
 
 .texto-apresentacao{
@@ -211,19 +229,17 @@ header a:hover{
 .btn-colecao {
 	font-family: 'Raleway', sans-serif;
 	text-decoration: none;
-	color: #111111;
+	color: black;
 	font-size: 1.2rem;
 	font-weight: bold;
 	padding: 10px;
 	border: 1.5px solid #111111;
 	border-radius: 10px;
-	transition: .6s;
+	transition: .15s;
 }
 
 .btn-colecao:hover {
-	color: white;
-	background: #111111;
-	text-shadow: white 0em 0em .3em;
+	box-shadow: black 0em 0em .3em;
 }
 
 
@@ -316,6 +332,11 @@ header a:hover{
 	top: .8rem;
 	right: 1em;
 	color: black;
+	padding: .2rem .45rem;
+}
+
+#popup-login-cadastro .topo-popup a:hover {
+	color: #ff6961;
 }
 
 #popup-login-cadastro .form .formulario-popup {
