@@ -1,33 +1,54 @@
 /* Funções para a SideBar */
-
-/* Botão Hamburguer */
 document.getElementById("btn-mobile").addEventListener('click', function(event){
   event.preventDefault()
+  document.querySelector('#side-bar').classList.add('active');
 });
 
-const ActionBtn = document.getElementById('btn-mobile');
-
-function SideBar() {
-	const SideBar = document.getElementById('links');
-	SideBar.classList.toggle('active')
-	console.log('clickou no botão hamburguer')
-}
-
-ActionBtn.addEventListener('click', SideBar);
-/* Fim Botão Hamburguer */
-
-/* Botão Close */
 document.getElementById("sair").addEventListener("click", function(event){
   event.preventDefault()
+  document.querySelector('#side-bar').classList.remove('active');
 });
-const SairSideBar = document.getElementById("sair");
-SairSideBar.addEventListener('click', SideBar);
-/* Fim Botão Close */
-
 /* Fim Funções para a SideBar */
 
 
 
+/* Funções para Barra de opções do Usuário */
+document.querySelector(".btn-usuario").addEventListener('click', function(event){
+  event.preventDefault()
+});
+
+const AreaUsuario = document.getElementById('area-usuario');
+const ListaUsuario = document.getElementById('bar-list-active');
+
+function AtivaLista() {
+  ListaUsuario.classList.add('active')
+}
+function SairLista() {
+  ListaUsuario.classList.remove('active')
+}
+
+AreaUsuario.addEventListener('mouseover', AtivaLista);
+AreaUsuario.addEventListener('mouseout', SairLista);
+
+
+document.querySelector(".btn-sacola").addEventListener('click', function(event){
+  event.preventDefault()
+});
+/* Fim das Funções para Barra de opções do Usuário */
+
+
+
+/* Funções para PopUp de Login/Cadastro */
+document.querySelector('#btn-popup').addEventListener('click', function(event){
+  event.preventDefault();
+  document.querySelector('#popup-login-cadastro').classList.add('active');
+});
+
+document.querySelector('#btn-sair-popup').addEventListener('click', function(event){
+  event.preventDefault();
+  document.querySelector('#popup-login-cadastro').classList.remove('active');
+});
+/* Fim Funções para PopUp de Login/Cadastro */
 
 
 
@@ -71,4 +92,4 @@ if(target.length) {
     animeScroll();
   }, 50));
 }
-/* Animação da parte de compras */
+/* Fim Animação da parte de compras */
