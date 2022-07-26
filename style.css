@@ -17,14 +17,6 @@ header a:hover{
 	text-shadow: white 0em 0em .3em;
 }
 
-#topo-nav {
-	display: flex;
-	width: 100%;
-	background: #111111;
-	padding-top: 1.25rem;
-	padding-bottom: 1.25rem;
-}
-
 #escurecer {
 	transition: 0.2s;
 }
@@ -40,10 +32,19 @@ header a:hover{
 }
 
 
+#topo-nav {
+	display: flex;
+	width: 100%;
+	background: #111111;
+	padding-top: 1.25rem;
+	padding-bottom: 1.25rem;
+}
+
+
 /* ----------------------Css das 3 divs do #topo-nav-------------------------------- */
 
 
-/* --------------Primeira Div---------------- */
+/* --------------Primeira Div------------------------------------------- */
 #topo-nav .left-itens {
 	display: flex;
 	justify-content: flex-start;
@@ -52,10 +53,27 @@ header a:hover{
 /* --------------Primeira Div----------------- */
 /* Relacionados a primeira div */
 #side-bar {
+	display: flex;
+	flex-flow: row nowrap;
+	overflow-x: hidden;
 	list-style: none;
 	margin-top: auto;
 	margin-bottom: auto;
 }
+
+#side-bar li{
+	display: flex;
+	justify-content: baseline;
+	margin-inline: .5rem;
+}
+
+#topo-nav .left-itens a {
+	text-decoration: none;
+	font-size: 1rem;
+	letter-spacing: .1rem;
+}
+
+
 
 /* Botão Mobile */
 #btn-mobile {
@@ -69,24 +87,11 @@ header a:hover{
 	display: none;
 }
 /* Botão Mobile */
-
-
-#side-bar li{
-	display: inline-block;
-	margin-inline: .313rem;
-}
-
-
-#topo-nav .left-itens a {
-	text-decoration: none;
-	font-size: 1rem;
-	letter-spacing: .1rem;
-}
 /* Relacionados a primeira div */
 
 
 
-/* --------------Segunda Div---------------- */
+/* --------------Segunda Div------------------------------------------ */
 #topo-nav .logo {
 	display: flex;
 	justify-content: center;
@@ -105,7 +110,7 @@ header a:hover{
 
 
 
-/* --------------Terceira Div---------------- */
+/* --------------Terceira Div---------------------------------------- */
 
 #topo-nav .right-itens{
 	display: flex;
@@ -123,16 +128,21 @@ header a:hover{
 	cursor: pointer;
 }
 
-#topo-nav a.btn-usuario{
+#area-sacola {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	height: 100%;
+	cursor: pointer;
+}
+
+#topo-nav .right-itens a.btn-usuario,
+#topo-nav .right-itens a.btn-sacola {
 	padding-inline: 1rem;
 }
 
 #topo-nav .right-itens .btn-usuario:hover {
 	text-shadow: none;
-}
-
-#topo-nav .right-itens a.btn-sacola {
-	padding-inline: 1rem;
 }
 
 #topo-nav .right-itens i.btn-sacola {
@@ -141,16 +151,20 @@ header a:hover{
 }
 
 #topo-nav .right-itens .btn-sacola:hover {
-	text-shadow: white 0em 0em .2em;
+	text-shadow: none
 }
 
 #area-usuario .btn-usuario,
-#topo-nav .right-itens .btn-sacola{
+#area-sacola .btn-sacola,{
 	display: inline;
 }
 
 
 .right-itens .area-usuario-celular {
+	display: none;
+}
+
+.right-itens .area-sacola-celular {
 	display: none;
 }
 
@@ -176,7 +190,26 @@ header a:hover{
 #bar-list-active.active {
 	display: block;
 }
-/* Relacionados a terceira div */
+
+
+
+#area-sacola-active {
+	display: none;
+	flex-flow: column;
+	align-items: center;
+	position: absolute;
+	top: 76px;
+	right: 0px;
+	overflow-y: auto;
+	width: 250px;
+	padding: 1rem;
+	background: #111111;
+}
+
+#area-sacola-active.active {
+	display: flex;
+}
+/* Fim Relacionados a terceira div */
 
 /*---------------------------------Section de apresentação----------------------------------*/
 
@@ -252,9 +285,10 @@ header a:hover{
 	margin: 5rem 0rem 2rem 0rem;
 }
 
-.conteiner {
+#best-sellerM, #best-sellerF {
 	width: 90%;
 	margin-inline: auto;
+	margin-bottom: 2rem;
 	display: flex;
 	justify-content: space-evenly;
 	flex-wrap: wrap;
@@ -276,6 +310,17 @@ header a:hover{
 	text-decoration: none;
 	margin-top: 1rem;
 	font-weight: bold;
+}
+
+.btn-add-carrinho {
+	display: block;
+	text-align: center;
+	border: 2px solid #111111;
+	padding: .5rem;
+}
+
+.btn-add-carrinho:hover {
+	box-shadow: black 0em 0em .3em;
 }
 
 /*-----------------------------Animação Section de Compra------------------------------*/
@@ -378,6 +423,17 @@ header a:hover{
 	text-decoration: none;
 }
 
+/*----------------------------- Fim Pop Up Login/Cadastro------------------------------*/
+
+/*----------------------------- Venda dos Itens ------------------------------*/
+
+#venda-itens {
+	width: 90%;
+	margin: auto;
+	margin-top: 1.5rem;
+}
+
+/*----------------------------- Fim Venda dos Itens ------------------------------*/
 
 /*---------------------------------Media Queries --------------------------------------*/	
 @media (max-width: 768px) {
@@ -419,11 +475,18 @@ header a:hover{
 		align-items: center;
 	}
 
-	#topo-nav .right-itens .btn-sacola {
-		padding-inline: .5rem;
+	#area-sacola {
+		display: none;
 	}
 
-	#topo-nav .right-itens .btn-usuario {
+	.right-itens .area-sacola-celular {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+
+	#topo-nav .right-itens a.btn-usuario,
+	#topo-nav .right-itens a.btn-sacola {
 		padding-inline: .5rem;
 	}
 
@@ -500,16 +563,12 @@ header a:hover{
 		margin-left: .625rem;
 	}
 
-	.right-itens{
+	#topo-nav .right-itens{
 		margin-right: .125rem;
 	}
 
-	.btn-sacola {
-		padding-inline: .5rem;
-	}
-
-	.btn-usuario {
-		padding-inline: .5rem;
+	#topo-nav .left-itens {
+		margin-left: .125rem;
 	}
 
 	#topo-nav .right-itens .btn-sacola i, 
@@ -536,7 +595,7 @@ header a:hover{
 	}
 
 	.itens {
-		margin-bottom: 4rem;
+		margin-bottom: 6rem;
 	}
 
 
