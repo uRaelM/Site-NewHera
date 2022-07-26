@@ -40,6 +40,21 @@ document.querySelector(".btn-sacola").addEventListener('click', function(event){
 });
 /* Fim das Funções para Barra de opções do Usuário */
 
+/* Funções para Barra de opções do Usuário */
+const AreaSacola = document.getElementById('area-sacola');
+const ActiveSacola = document.getElementById('area-sacola-active');
+
+function Ativa() {
+  ActiveSacola.classList.add('active')
+}
+function Sai() {
+  ActiveSacola.classList.remove('active')
+}
+
+AreaSacola.addEventListener('mouseover', Ativa);
+AreaSacola.addEventListener('mouseout', Sai);
+/* Fim das Funções para Barra de opções do Usuário */
+
 
 
 /* Funções para PopUp de Login/Cadastro */
@@ -57,7 +72,6 @@ document.querySelector('#btn-sair-popup').addEventListener('click', function(eve
   document.querySelector('.img-principal').classList.remove('active');
 });
 /* Fim Funções para PopUp de Login/Cadastro */
-
 
 
 /* Animação da parte de compras */
