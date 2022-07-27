@@ -15,14 +15,13 @@ document.getElementById("sair").addEventListener("click", function(event){
 /* Fim Funções para a SideBar */
 
 
-
 /* Funções para Barra de opções do Usuário */
 document.querySelector(".btn-usuario").addEventListener('click', function(event){
   event.preventDefault()
 });
 
-const AreaUsuario = document.getElementById('area-usuario');
-const ListaUsuario = document.getElementById('bar-list-active');
+const AreaUsuario = document.querySelector('#area-usuario');
+const ListaUsuario = document.querySelector('#bar-list-active');
 
 function AtivaLista() {
   ListaUsuario.classList.add('active')
@@ -41,8 +40,8 @@ document.querySelector(".btn-sacola").addEventListener('click', function(event){
 /* Fim das Funções para Barra de opções do Usuário */
 
 /* Funções para Barra de opções do Usuário */
-const AreaSacola = document.getElementById('area-sacola');
-const ActiveSacola = document.getElementById('area-sacola-active');
+const AreaSacola = document.querySelector('#area-sacola');
+const ActiveSacola = document.querySelector('#area-sacola-active');
 
 function Ativa() {
   ActiveSacola.classList.add('active')
