@@ -415,6 +415,10 @@ header a:hover{
 	border-radius: 5px;
 	cursor: pointer;
 }
+.cadastrar {
+	background: #111111;
+	color: white;
+}
 
 #popup-login-cadastro .form .formulario-popup a {
 	display: block;
@@ -425,18 +429,8 @@ header a:hover{
 
 /*----------------------------- Fim Pop Up Login/Cadastro------------------------------*/
 
-/*----------------------------- Venda dos Itens ------------------------------*/
-
-#venda-itens {
-	width: 90%;
-	margin: auto;
-	margin-top: 1.5rem;
-}
-
-/*----------------------------- Fim Venda dos Itens ------------------------------*/
-
 /*---------------------------------Media Queries --------------------------------------*/	
-@media (max-width: 768px) {
+@media (max-width: 820px) {
 
 /* Ajeitando proporções para MD */
 	#side-bar {
