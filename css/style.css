@@ -17,6 +17,11 @@ header a:hover{
 	text-shadow: white 0em 0em .3em;
 }
 
+section, footer {
+	max-width: 1800px;
+	margin-inline: auto;
+}
+
 #escurecer {
 	transition: 0.2s;
 }
@@ -125,7 +130,6 @@ header a:hover{
 	flex-direction: row;
 	align-items: center;
 	height: 100%;
-	cursor: pointer;
 }
 
 #area-sacola {
@@ -133,7 +137,6 @@ header a:hover{
 	flex-direction: row;
 	align-items: center;
 	height: 100%;
-	cursor: pointer;
 }
 
 #topo-nav .right-itens a.btn-usuario,
@@ -168,7 +171,7 @@ header a:hover{
 	display: none;
 }
 
-#bar-list-active {
+#area-usuario-active {
 	display: none;
 	position: absolute;
 	top: 76px;
@@ -178,16 +181,16 @@ header a:hover{
 	list-style: none;
 }
 
-#bar-list-active li {
+#area-usuario-active li {
 	margin-bottom: .5rem;
 	border-bottom: 1px solid #2e2e2e;
 }
 
-#bar-list-active a {
+#area-usuario-active a {
 	text-decoration: none;
 }
 
-#bar-list-active.active {
+#area-usuario-active.active {
 	display: block;
 }
 
@@ -226,7 +229,7 @@ header a:hover{
 }
 
 .items-sacola img {
-	margin-right: 2rem;
+	margin-right: 1rem;
 	height: 100px;
 	width: 75px;
 }
@@ -251,17 +254,22 @@ header a:hover{
 
 #area-sacola-active.active .item-sacola-right .total {
 	text-align: right;
+	margin-right: .5rem;
 }
 
 #area-sacola-active.active .menos-foco {
 	color: #696969;
 }
 
-.input-sacola {
-	margin-top: .2rem;
+#area-sacola-active.active .item-sacola-right .lixeira {
+	cursor: pointer;
+	border-style: none;
+	background: #fff;
+	color: #000;
+	margin-left: 90%;
 }
 
-#area-sacola-active.active .input-quantidade {
+#area-sacola-active.active .input-sacola #input-quantidade {
 	width: 20px;
 	text-align: center;
 	color: #000;
@@ -270,15 +278,15 @@ header a:hover{
 	margin-inline: -5px;
 }
 
-.radius-mais {
+#area-sacola-active.active .input-sacola .radius-mais {
 	border-radius: 0px 15px 15px 0px;
 }
 
-.radius-menos {
+#area-sacola-active.active .input-sacola .radius-menos {
 	border-radius: 15px 0px 0px 15px;
 }
 
-.btn-mais-menos {
+#area-sacola-active.active .input-sacola .btn-mais-menos {
 	color: #000000;
 	cursor: pointer;
 	border: 1px solid #111111;
@@ -286,12 +294,12 @@ header a:hover{
 	background: #fff;
 }
 
-.finalizar {
+.item-sacola-right.finalizar {
 	 border-top: 1px solid #111111;
 	 margin-top: 1rem;
 }
 
-.btn-compra-sacola {
+#area-sacola-active.active .btn-compra-sacola {
 	width: 90%;
 	padding: 10px;
 	margin: 1rem 0rem;
@@ -315,7 +323,7 @@ header a:hover{
 	margin-top: 3rem;
 }
 
-.imagens-apresentacao {
+#apresentacao-site .imagens-apresentacao {
 	width: 100%;
 	max-width: 600px;
 	margin-right: auto;
@@ -323,16 +331,16 @@ header a:hover{
 }
 
 
-.img-principal {
+#apresentacao-site .imagens-apresentacao .img-principal {
 	transition: 0.2s;
 	width: 100%;
 }
 
-.img-principal.active {
+#apresentacao-site .imagens-apresentacao .img-principal.active {
 	filter: brightness(0.4);
 }
 
-.texto-apresentacao{
+#apresentacao-site .texto-apresentacao{
 	text-align: center;
 	margin-top: auto;
 	margin-bottom: auto;
@@ -340,20 +348,20 @@ header a:hover{
 	width: 100%;
 }
 
-.texto-apresentacao h1 {
+#apresentacao-site .texto-apresentacao h1 {
 	display: inline-block;
 	font-size: 2rem;
 	font-weight: bold;
 }
 
-.texto-apresentacao p {
+#apresentacao-site .texto-apresentacao p {
 	padding-top: .5rem;
 	padding-bottom: 3rem;
 	font-weight: 400;
 	font-size: 1.5rem;
 }
 
-.btn-colecao {
+#apresentacao-site .texto-apresentacao .btn-colecao {
 	font-family: 'Raleway', sans-serif;
 	text-decoration: none;
 	color: black;
@@ -365,7 +373,7 @@ header a:hover{
 	transition: .15s;
 }
 
-.btn-colecao:hover {
+#apresentacao-site .texto-apresentacao .btn-colecao:hover {
 	box-shadow: black 0em 0em .3em;
 }
 
@@ -388,7 +396,8 @@ header a:hover{
 	flex-wrap: wrap;
 }
 
-.itens {
+#best-sellerM .itens,
+#best-sellerF .itens {
 	margin-top: 2rem;
 	margin-bottom: 6rem;
 	margin-inline: 1rem;
@@ -396,25 +405,29 @@ header a:hover{
 	height: 300px;
 }
 
-.itens img {
+#best-sellerM .itens img,
+#best-sellerF .itens img {
 	width: 100%;
 }
 
-.itens a {
+#best-sellerM .itens a,
+#best-sellerF .itens a {
 	color: black;
 	text-decoration: none;
 	margin-top: 1rem;
 	font-weight: bold;
 }
 
-.btn-add-carrinho {
+#best-sellerM .itens .btn-add-carrinho,
+#best-sellerF .itens .btn-add-carrinho {
 	display: block;
 	text-align: center;
 	border: 2px solid #111111;
 	padding: .5rem;
 }
 
-.btn-add-carrinho:hover {
+#best-sellerM .itens .btn-add-carrinho:hover,
+#best-sellerF .itens .btn-add-carrinho:hover {
 	box-shadow: black 0em 0em .3em;
 }
 
