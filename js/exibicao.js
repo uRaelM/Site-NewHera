@@ -21,7 +21,7 @@ document.querySelector(".btn-usuario").addEventListener('click', function(event)
 });
 
 const AreaUsuario = document.querySelector('#area-usuario');
-const ListaUsuario = document.querySelector('#bar-list-active');
+const ListaUsuario = document.querySelector('#area-usuario-active');
 
 function AtivaLista() {
   ListaUsuario.classList.add('active')

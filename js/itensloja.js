@@ -118,23 +118,26 @@ AtualizarSacola = () => {
 
       <div class="items-sacola">
         <a href="">
-         <img src="`+val.img+`">
+          <img src="`+val.img+`">
           <div class="item-sacola-right">
-            <p>
-              `+val.nome+`
-            </p>
             <p class="preco"> 
                R$ `+val.valor+`
             </p>
-            <div class="input-sacola">
-              <button class="btn-mais-menos radius-menos"><i class="fa-solid fa-minus"></i></button>
-              <input disabled class="input-quantidade" type="text" name="quantidade" value="`+val.quantidade+`">
-              <button class="btn-mais-menos radius-mais"><i class="fa-solid fa-plus"></i></button>
-            </div>
-            <p class="preco total">
-              <span class="menos-foco">R$ `+val.valor * val.quantidade+`</span>
+            <P>
+              `+val.nome+`
             </p>
         </a>
+          <button class="lixeira">
+            <i class="fa-regular fa-trash-can"></i>
+          </button>
+          <div class="input-sacola">
+            <button type="button" from="input-quantidade" class="btn-mais-menos radius-menos"><i class="fa-solid fa-minus"></i></button>
+            <input disabled id="input-quantidade" type="text" name="quantidade" value="`+val.quantidade+`">
+            <button type="button" from="input-quantidade" class="btn-mais-menos radius-mais"><i class="fa-solid fa-plus"></i></button>
+          </div>
+            <p class="preco total">
+              <span class="menos-foco">R$ `+(val.valor * val.quantidade).toFixed(2)+`</span>
+            </p>
           </div>
       </div>
       `;
@@ -152,6 +155,8 @@ AtualizarSacola = () => {
 
         `
 }
+
+
 
 var BMlinks = document.getElementById('best-sellerM').getElementsByClassName('btn-add-carrinho');
 
@@ -174,5 +179,3 @@ for(var i = 0; i < BFlinks.length; i++) {
     AtualizarSacola();
   })
 }
-
-
