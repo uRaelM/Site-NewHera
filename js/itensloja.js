@@ -2,28 +2,28 @@ const BestM = [
   {
     id: 0,
     nome: 'Moletom Cascavel Neon',
-    img: '../imagens/foto1.jpg',
+    img: 'imagens/foto1.jpg',
     valor: 249.99,
     quantidade: 0
   },
   {
     id: 1,
     nome: 'Sweater Marni',
-    img: '../imagens/foto2.jpg',
+    img: 'imagens/foto2.jpg',
     valor: 139.99,
     quantidade: 0
   },
   {
     id: 2,
     nome: 'Camisa Lanvin estampada',
-    img: '../imagens/foto3.jpg',
+    img: 'imagens/foto3.jpg',
     valor: 79.99,
     quantidade: 0
   },
   {
     id: 3,
     nome: 'Short estampado verão',
-    img: '../imagens/foto4.jpg',
+    img: 'imagens/foto4.jpg',
     valor: 59.99,
     quantidade: 0
   }
@@ -33,28 +33,28 @@ const BestF = [
   {
     id: 0,
     nome: 'Camiseta manga longa',
-    img: '../imagens/fem1.jpg',
+    img: 'imagens/fem1.jpg',
     valor: 74.99,
     quantidade: 0
   },
   {
     id: 1,
     nome: 'Vestido sem manga',
-    img: '../imagens/fem2.jpg',
+    img: 'imagens/fem2.jpg',
     valor: 349.99,
     quantidade: 0
   },
   {
     id: 2,
     nome: 'Blusa Plumada sem manga',
-    img: '../imagens/fem3.jpg',
+    img: 'imagens/fem3.jpg',
     valor: 99.99,
     quantidade: 0
   },
   {
     id: 3,
     nome: 'Saia curta Plumada',
-    img: '../imagens/fem4.jpg',
+    img: 'imagens/fem4.jpg',
     valor: 99.99,
     quantidade: 0
   }
@@ -165,7 +165,7 @@ for(var i = 0; i < BMlinks.length; i++) {
   BMlinks[i].addEventListener('click', function(){
     event.preventDefault();
     let key = this.getAttribute('key');
-    M[key].quantidade++;
+    BestM[key].quantidade++;
     AtualizarSacola();
   })
 }
@@ -176,7 +176,7 @@ for(var i = 0; i < BFlinks.length; i++) {
   BFlinks[i].addEventListener('click', function(){
     event.preventDefault();
     let key = this.getAttribute('key');
-    F[key].quantidade++;
+    BestF[key].quantidade++;
     AtualizarSacola();
   })
 }

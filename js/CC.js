@@ -2,70 +2,70 @@ const M = [
   {
     id: 0,
     nome: 'Moletom Cascavel Neon',
-    img: '../imagens/foto1.jpg',
+    img: 'imagens/foto1.jpg',
     valor: 249.99,
     quantidade: 0
   },
   {
     id: 1,
     nome: 'Sweater Marni',
-    img: '../imagens/foto2.jpg',
+    img: 'imagens/foto2.jpg',
     valor: 139.99,
     quantidade: 0
   },
   {
     id: 2,
     nome: 'Camisa Lanvin ',
-    img: '../imagens/foto3.jpg',
+    img: 'imagens/foto3.jpg',
     valor: 79.99,
     quantidade: 0
   },
   {
     id: 3,
     nome: 'Short estampado verão',
-    img: '../imagens/foto4.jpg',
+    img: 'imagens/foto4.jpg',
     valor: 59.99,
     quantidade: 0
   },
   {
     id: 4,
     nome: 'Casaco Everest',
-    img: '../imagens/img-escolha-agasalho.webp',
+    img: 'imagens/img-escolha-agasalho.webp',
     valor: 399.99,
     quantidade: 0
   },
   {
     id: 5,
     nome: 'Calça Universo',
-    img: '../imagens/img-escolha-calca.webp',
+    img: 'imagens/img-escolha-calca.webp',
     valor: 179.99,
     quantidade: 0
   },
   {
     id: 6,
     nome: 'Camisa Neon',
-    img: '../imagens/img-escolha-camisa.webp',
+    img: 'imagens/img-escolha-camisa.webp',
     valor: 59.99,
     quantidade: 0
   },
   {
     id: 7,
     nome: 'Traje de Mergulho',
-    img: '../imagens/img-escolha-esportivo.webp',
+    img: 'imagens/img-escolha-esportivo.webp',
     valor: 564.99,
     quantidade: 0
   },
   {
     id: 8,
     nome: 'Short de linho preto',
-    img: '../imagens/img-escolha-short.webp',
+    img: 'imagens/img-escolha-short.webp',
     valor: 79.99,
     quantidade: 0
   },
   {
     id: 9,
     nome: 'Terno das Rosas',
-    img: '../imagens/img-escolha-social.webp',
+    img: 'imagens/img-escolha-social.webp',
     valor: 649.99,
     quantidade: 0
   }
@@ -75,182 +75,182 @@ const F = [
   {
     id: 10,
     nome: 'Camiseta manga longa',
-    img: '../imagens/fem1.jpg',
+    img: 'imagens/fem1.jpg',
     valor: 74.99,
     quantidade: 0
   },
   {
     id: 11,
     nome: 'Vestido sem manga',
-    img: '../imagens/fem2.jpg',
+    img: 'imagens/fem2.jpg',
     valor: 349.99,
     quantidade: 0
   },
   {
     id: 12,
     nome: 'Blusa Plumada sem manga',
-    img: '../imagens/fem3.jpg',
+    img: 'imagens/fem3.jpg',
     valor: 99.99,
     quantidade: 0
   },
   {
     id: 13,
     nome: 'Saia curta Plumada',
-    img: '../imagens/fem4.jpg',
+    img: 'imagens/fem4.jpg',
     valor: 99.99,
     quantidade: 0
   },
   {
     id: 14,
     nome: 'Jaqueta de Frio',
-    img: '../imagens/img-escolha-agasalhoF.webp',
+    img: 'imagens/img-escolha-agasalhoF.webp',
     valor: 385.99,
     quantidade: 0
   },
   {
     id: 15,
     nome: 'Short Jeans',
-    img: '../imagens/short.webp',
+    img: 'imagens/short.webp',
     valor: 99.99,
     quantidade: 0
   },
   {
     id: 16,
     nome: 'Vestido de Gala vermelho',
-    img: '../imagens/img-escolha-socialF.webp',
+    img: 'imagens/img-escolha-socialF.webp',
     valor: 99.99,
     quantidade: 0
   },
   {
     id: 17,
     nome: 'Top preto',
-    img: '../imagens/img-escolha-top.webp',
+    img: 'imagens/img-escolha-top.webp',
     valor: 99.99,
     quantidade: 0
   },
   {
     id: 18,
     nome: 'Vestido Florido',
-    img: '../imagens/img-escolha-vestido.webp',
+    img: 'imagens/img-escolha-vestido.webp',
     valor: 249.99,
     quantidade: 0
   },
   {
     id: -1,
     nome: 'Aqui teria uma roupa',
-    img: '../imagens/Vazio.png',
+    img: 'imagens/Vazio.png',
     valor: 999.99,
     quantidade: 0
   },
   {
     id: -1,
     nome: 'Aqui teria uma roupa',
-    img: '../imagens/Vazio.png',
+    img: 'imagens/Vazio.png',
     valor: 999.99,
     quantidade: 0
   },
   {
     id: -1,
     nome: 'Aqui teria uma roupa',
-    img: '../imagens/Vazio.png',
+    img: 'imagens/Vazio.png',
     valor: 999.99,
     quantidade: 0
   },
   {
     id: -1,
     nome: 'Aqui teria uma roupa',
-    img: '../imagens/Vazio.png',
+    img: 'imagens/Vazio.png',
     valor: 999.99,
     quantidade: 0
   },
   {
     id: -1,
     nome: 'Aqui teria uma roupa',
-    img: '../imagens/Vazio.png',
+    img: 'imagens/Vazio.png',
     valor: 999.99,
     quantidade: 0
   },
   {
     id: -1,
     nome: 'Aqui teria uma roupa',
-    img: '../imagens/Vazio.png',
+    img: 'imagens/Vazio.png',
     valor: 999.99,
     quantidade: 0
   },
   {
     id: -1,
     nome: 'Aqui teria uma roupa',
-    img: '../imagens/Vazio.png',
+    img: 'imagens/Vazio.png',
     valor: 999.99,
     quantidade: 0
   },
   {
     id: -1,
     nome: 'Aqui teria uma roupa',
-    img: '../imagens/Vazio.png',
+    img: 'imagens/Vazio.png',
     valor: 999.99,
     quantidade: 0
   },
   {
     id: -1,
     nome: 'Aqui teria uma roupa',
-    img: '../imagens/Vazio.png',
+    img: 'imagens/Vazio.png',
     valor: 999.99,
     quantidade: 0
   },
   {
     id: -1,
     nome: 'Aqui teria uma roupa',
-    img: '../imagens/Vazio.png',
+    img: 'imagens/Vazio.png',
     valor: 999.99,
     quantidade: 0
   },
   {
     id: -1,
     nome: 'Aqui teria uma roupa',
-    img: '../imagens/Vazio.png',
+    img: 'imagens/Vazio.png',
     valor: 999.99,
     quantidade: 0
   },
   {
     id: -1,
     nome: 'Aqui teria uma roupa',
-    img: '../imagens/Vazio.png',
+    img: 'imagens/Vazio.png',
     valor: 999.99,
     quantidade: 0
   },
   {
     id: -1,
     nome: 'Aqui teria uma roupa',
-    img: '../imagens/Vazio.png',
+    img: 'imagens/Vazio.png',
     valor: 999.99,
     quantidade: 0
   },
   {
     id: -1,
     nome: 'Aqui teria uma roupa',
-    img: '../imagens/Vazio.png',
+    img: 'imagens/Vazio.png',
     valor: 999.99,
     quantidade: 0
   },
   {
     id: -1,
     nome: 'Aqui teria uma roupa',
-    img: '../imagens/Vazio.png',
+    img: 'imagens/Vazio.png',
     valor: 999.99,
     quantidade: 0
   },
   {
     id: -1,
     nome: 'Aqui teria uma roupa',
-    img: '../imagens/Vazio.png',
+    img: 'imagens/Vazio.png',
     valor: 999.99,
     quantidade: 0
   },
   {
     id: 1000000000000000000000,
     nome: 'Aqui teria uma roupa',
-    img: '../imagens/Vazio.png',
+    img: 'imagens/Vazio.png',
     valor: 999.99,
     quantidade: 0
   }
