@@ -717,7 +717,7 @@ section {
 
 	/* Apresentação */
 
-	.texto-apresentacao p {
+	#apresentacao-site .texto-apresentacao p {
 		font-size: 1rem;
 	}
 
