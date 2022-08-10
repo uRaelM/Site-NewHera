@@ -716,17 +716,13 @@ section {
 	}
 
 	/* Apresentação */
+	
+	#apresentacao-site {
+		margin-top: .5rem;
+	}
 
 	#apresentacao-site .texto-apresentacao p {
 		font-size: 1rem;
-	}
-
-	.intro {
-		margin-top: 2rem;
-	}
-
-	.first-moda {
-		margin-top: 5rem;
 	}
 
 	.itens {
