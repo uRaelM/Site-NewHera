@@ -94,8 +94,52 @@
 			</nav>
 		</header>
 	<!-- Fim Topo -->
+
+			<!-- Inicio PopUp de Login -->
+		<div id="popup-login-cadastro">
+			<div class="topo-popup">
+				<h2>Entrar</h2>				
+				<a id="btn-sair-popup" href="">
+					<i class="fa-solid fa-xmark"></i>	
+				</a>
+			</div>
+			<div class="form">
+				<div class="formulario-popup">
+					<label for="email">
+						Email
+					</label>
+					<input type="text" id="email" placeholder="Digite seu E-mail">
+				</div>
+				<div class="formulario-popup">
+					<label for="password">
+						Senha
+					</label>
+					<input type="password" id="password" placeholder="Digite sua senha">
+				</div>
+				<div class="formulario-popup">
+					<input type="checkbox" id="remember-me">
+					<label for="remember-me">
+						Lembrar de mim
+					</label>
+				</div>
+				<div class="formulario-popup">
+					<button type="submit">Entrar</button>
+				</div>
+				<div class="formulario-popup">
+					<a style="font-family: 'Times New Roman', Serif;" href="#">Esqueceu a sua senha?</a>
+				</div>
+				<hr>
+				<div class="formulario-popup">
+					<a href="cadastro.html">
+						<button type="submit" class="cadastrar">Cadastrar-se</button>
+					</a>
+				</div>
+			</div>
+		</div>
+		<!-- Fim PopUp de Login -->
+
+
 	<section id="login-para-conteiner--celular">
-		<div class="formulario--celular">
 			<h1>Bem vindo a New Hera</h1>
 			<div class="form-celular">
 				<label for="email">
@@ -149,28 +193,43 @@
 				</select>
 			</div>
 			<label>Preferências</label>
-			<div class="form-celular preferencia">
-				<input type="checkbox" id="masculino">
-				<label class="preferencia">Masculino</label>
-				<input type="checkbox" name="" id="feminino">
-				<label class="preferencia">Feminino</label>
+			<div class="form-preferencias">
+				<div class="">
+					<div class="unidade">
+						<input type="checkbox" id="masculino">
+						<label for="masculino">Masculino</label>
+					</div>
+					
+					<div class="unidade">
+						<input type="checkbox" name="" id="plussize">
+						<label for="plussize">Plus Size</label>	
+					</div>
+					
+					<div class="unidade">
+						<input type="checkbox" name="" id="sportivo">
+						<label for="sportivo">Esportivo</label>
+					</div>
+				</div>
+				<div class="">
+					<div class="unidade">
+						<input type="checkbox" id="feminino">
+						<label for="feminino">Feminino</label>
+					</div>
+					
+					<div class="unidade">
+						<input type="checkbox" name="" id="streetwear">
+						<label for="streetwear">Street Wear</label>	
+					</div>
+					
+					<div class="unidade">
+						<input type="checkbox" name="" id="grife">
+						<label for="grife">Grife</label>
+					</div>
+				</div>
 			</div>
-			<div class="form-celular">
-				<input type="checkbox" name="" id="plussize">
-				<label class="preferencia">Plus Size</label>
-				<input type="checkbox" name="" id="infantil">
-				<label class="preferencia">Infantil</label>
-			</div>
-			<div class="form-celular">
-				<input type="checkbox" name="" id="streetwear">
-				<label class="preferencia">Street Wear</label>
-				<input type="checkbox" name="" id="sportivo">
-				<label class="preferencia">Esportivo</label>
-			</div>
-			<div class="form-celular">
-				<button class="cadastrar">Cadastrar</button>
-			</div>
-		</div>
+				<div class="form-celular">
+					<button class="cadastrar">Cadastrar</button>
+				</div>
 	</section>
 
 	<script src="https://kit.fontawesome.com/bd057bbf4d.js" crossorigin="anonymous"></script>

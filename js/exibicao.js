@@ -114,3 +114,4 @@ if(target.length) {
   }, 100));
 }
 /* Fim Animação da parte de compras */
+

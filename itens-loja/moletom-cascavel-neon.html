@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Entrar/Cadastrar-se - New Hera</title>
-	<link rel="stylesheet" type="text/css" href="../css/style.css">
-	<link rel="stylesheet" type="text/css" href="../css/login-celular-style.css">
+	<title>New Hera - Store</title>
+	<link rel="stylesheet" type="text/css" href="../style.css">
 
 	<!-- Link pro google fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,9 +16,8 @@
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
 </head>
 <body>
-	<div id="escurecer">
 	<!-- Inicio Topo -->
-		<header id="topo">
+	<header id="topo">
 			<nav id="topo-nav">
 
 
@@ -45,13 +43,25 @@
 									FEMININO
 							</a>
 						</li>
+
+						<li>
+							<a href="">
+									INFANTIL
+							</a>
+						</li>
+
+						<li>
+							<a href="">
+									PULSSIZE
+							</a>
+						</li>
 					</ul>
 				</div>
 
 
 
 				<div class="logo">
-					<a href="index.html">
+					<a href="../index.html">
 						<span>NEW HERA</span>
 					</a>
 				</div>
@@ -63,7 +73,7 @@
 						<a class="btn-usuario" href="#">
 							<i class="fa-regular fa-circle-user fa-xl"></i>
 						</a>
-						<ul id="area-usuario-active">
+						<ul id="bar-list-active">
 							<li><a id="btn-popup" href="">Entrar/Cadastre-se</a></li>
 							<li><a href="">Meus pedidos</a></li>
 							<li><a href="">Lista de desejos</a></li>
@@ -75,61 +85,54 @@
 							<i class="fa-regular fa-circle-user fa-xl"></i>
 						</a>
 					</div>
-					<div id="area-sacola">
-						<a class="btn-sacola" href="#">
-							<i class="fa-solid fa-bag-shopping fa-xl"></i>
-						</a>
-						<div id="area-sacola-active">
-							
-						</div>
-					</div>
-					<div class="area-sacola-celular">
-						<a class="btn-sacola" href="#">
-							<i class="fa-solid fa-bag-shopping fa-xl"></i>
-						</a>
-					</div>
+					<a class="btn-sacola" href="#">
+						<i class="fa-solid fa-bag-shopping fa-xl"></i>
+					</a>
 				</div>
 			</nav>
 		</header>
 	<!-- Fim Topo -->
 
-	<section id="login-para-conteiner--celular">
-		<div class="formulario--celular">
-			<h1>Entrar/Cadastrar-se</h1>
-			<div class="form-celular">
+	<!-- Inicio PopUp de Login -->
+	<div id="popup-login-cadastro">
+		<div class="topo-popup">
+			<h2>Entrar</h2>				
+			<a id="btn-sair-popup" href="">
+				<i class="fa-solid fa-xmark"></i>	
+			</a>
+		</div>
+		<div class="form">
+			<div class="formulario-popup">
 				<label for="email">
 					Email
 				</label>
 				<input type="text" id="email" placeholder="Digite seu E-mail">
 			</div>
-			<div class="form-celular">
+			<div class="formulario-popup">
 				<label for="password">
 					Senha
 				</label>
-				<input  type="password" id="password" placeholder="Digite sua senha">
+				<input type="password" id="password" placeholder="Digite sua senha">
 			</div>
-			<div class="form-celular">
+			<div class="formulario-popup">
 				<input type="checkbox" id="remember-me">
 				<label for="remember-me">
 					Lembrar de mim
 				</label>
 			</div>
-			<div class="form-celular">
-				<button class="entrar">Entrar</button>
+			<div class="formulario-popup">
+				<button>Cadastrar-se</button>
 			</div>
-			<div class="form-celular">
-				<a style="font-family: 'Times New Roman', Serif;" href="#">Esqueceu a sua senha?</a>
-			</div>
-			<hr>
-			<div class="form-celular">
-				<a href="cadastro.html">
-					<button class="cadastrar">Cadastrar-se</button>
-				</a>
+			<div class="formulario-popup">
+				<a style="font-family: 'Times New Roman', Serif;" href="">Esqueceu a sua senha?</a>
 			</div>
 		</div>
-	</section>
+	</div>
+	<!-- Fim PopUp de Login -->
+
+	
 
 	<script src="https://kit.fontawesome.com/bd057bbf4d.js" crossorigin="anonymous"></script>
-	<script src="../js/exibicao.js"></script>
+	<script src="../main.js"></script>
 </body>
 </html>

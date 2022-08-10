@@ -61,11 +61,25 @@
 	outline: none;
 	border-radius: 5px;
 	cursor: pointer;
-	margin-top: 2rem;
+	margin-top: 1rem;
 }
 
-#login-para-conteiner--celular label.preferencia{
+#login-para-conteiner--celular .form-preferencias {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin: 15px 0;
+}
+
+#login-para-conteiner--celular .form-preferencias.unidade {
+	display: block;
+}
+
+#login-para-conteiner--celular .form-preferencias label {
+	cursor: pointer;
 	color: #696969;
-	font-size: 12px;
-	margin-right: 4rem;
+	font-size: 14px;
+}
+
+#btn-popup {
+    pointer-events: none;
 }

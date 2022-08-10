@@ -1,4 +1,4 @@
-const M = [ 
+const BestM = [ 
   {
     id: 0,
     nome: 'Moletom Cascavel Neon',
@@ -29,7 +29,7 @@ const M = [
   }
 ]
 
-const F = [ 
+const BestF = [ 
   {
     id: 0,
     nome: 'Camiseta manga longa',
@@ -60,11 +60,12 @@ const F = [
   }
 ]
 
-const Items = M.concat(F);
+
+const Items = BestM.concat(BestF);
 
 BestSellerM = () => {
   var BestSellerMasculino = document.getElementById('best-sellerM');
-  M.map((val)=>{
+  BestM.map((val)=>{
     BestSellerMasculino.innerHTML += `
 
     <div class="itens" data-anime="bottom">
@@ -85,7 +86,7 @@ BestSellerM = () => {
 
 BestSellerF = () => {
   var BestSellerFeminino = document.getElementById('best-sellerF');
-  F.map((val)=>{
+  BestF.map((val)=>{
     BestSellerFeminino.innerHTML += `
 
     <div class="itens" data-anime="bottom">
@@ -131,7 +132,7 @@ AtualizarSacola = () => {
             <i class="fa-regular fa-trash-can"></i>
           </button>
           <div class="input-sacola">
-            <button type="button" from="input-quantidade" class="btn-mais-menos radius-menos"><i class="fa-solid fa-minus"></i></button>
+            <button type="submit" from="input-quantidade" class="btn-mais-menos radius-menos"><i class="fa-solid fa-minus"></i></button>
             <input disabled id="input-quantidade" type="text" name="quantidade" value="`+val.quantidade+`">
             <button type="button" from="input-quantidade" class="btn-mais-menos radius-mais"><i class="fa-solid fa-plus"></i></button>
           </div>
@@ -179,3 +180,6 @@ for(var i = 0; i < BFlinks.length; i++) {
     AtualizarSacola();
   })
 }
+
+
+/* Animação da parte de compras */
