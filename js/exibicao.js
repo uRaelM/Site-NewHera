@@ -39,6 +39,7 @@ document.querySelector(".btn-sacola").addEventListener('click', function(event){
 });
 /* Fim das Funções para Barra de opções do Usuário */
 
+
 /* Funções para Sacola */
 const AreaSacola = document.querySelector('#area-sacola');
 const ActiveSacola = document.querySelector('#area-sacola-active');
@@ -73,6 +74,7 @@ document.querySelector('#btn-sair-popup').addEventListener('click', function(eve
 /* Fim Funções para PopUp de Login/Cadastro */
 
 
+
 /* Animação da parte de compras */
 
 /* debounce para diminuir a ocorrência de chama da função */
@@ -92,9 +94,11 @@ const debounce = function(func, wait, immediate) {
 };
 /* debounce para diminuir a ocorrência de chama da função */
 
+
 const target = document.querySelectorAll('[data-anime]');
 const animationClass = 'animate';
 
+/* Função baseada na posição do objeto "target" na tela para adicionar a classe 'animate' */
 function animeScroll() {
   const windowTop = window.pageYOffset + ((window.innerHeight * 3) / 3.6);
   target.forEach(function(element) {
@@ -105,6 +109,7 @@ function animeScroll() {
     }
   })
 }
+/* Fim da Função baseada na posição do objeto "target" na tela para adicionar a classe 'animate' */
 
 animeScroll();
 

@@ -27,18 +27,18 @@
 	width: 100%;
 }
 
-.manual-navigation-arrow-right {
+#slider .slides .manual-navigation-arrow-right {
 	position: absolute;
-	top: 45%;
+	top: 60%;
 	right: 30px;
 	display: flex;
 	padding: 2rem;
 	cursor: pointer;
 }
 
-.manual-navigation-arrow-left {
+#slider .slides .manual-navigation-arrow-left {
 	position: absolute;
-	top: 45%;
+	top: 60%;
 	left: 30px;
 	display: flex;
 	padding: 2rem;
@@ -181,6 +181,7 @@
 	}
 
 	.itens-cc {
+		margin-bottom: 3rem;
 		width: 80px;
 		height: 107px;
 	}
@@ -192,8 +193,13 @@
 		overflow-y: hidden;
 	}
 
-	.btn-add-carrinho{
+	.itens-cc a {
+		margin-top: .5rem;
+	}
+
+	.itens-cc .btn-add-carrinho{
 		font-size: 12px;
+		padding: 0px;
 	}
 
 }
