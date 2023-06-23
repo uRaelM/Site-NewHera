@@ -1,5 +1,5 @@
 # Site-NewHera
-Site autoral fictício totalmente responsívo utilizando tecnólogia HTML, CSS e JavaScript.
+Site fictício de um E-commerce totalmente responsívo utilizando tecnólogia HTML, CSS e JavaScript.
 *****
 Link para visualização do site via Vercel: https://site-new-hera.vercel.app/
 *****
